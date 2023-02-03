@@ -25,17 +25,8 @@ $ kubectl apply -f {{{yamlPath}}}
 ```
 $ kubectl get {{object.kind}}
 
-NAME                         READY   STATUS    RESTARTS   AGE
-pod/{{object.metadata.name}}-647f5c6d6f-lt27f   1/1     Running   0          14s
-
-NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
-service/kubernetes   ClusterIP   10.100.0.1   <none>        443/TCP   19s
-
-NAME                    READY   UP-TO-DATE   AVAILABLE   AGE
-deployment.apps/{{object.metadata.name}}   1/1     1            1           15s
-
-NAME                               DESIRED   CURRENT   READY   AGE
-replicaset.apps/{{object.metadata.name}}-647f5c6d6f   1         1         1       15s
+NAME            READY   UP-TO-DATE   AVAILABLE   AGE
+{{object.metadata.name}}           3/3     3            3           5m43s
 
 ```
 - {{object.metadata.name}} {{object.kind}}와 Pod, Replicaset이 모두 확인이 된다면 정상적으로 생성된 것입니다.
