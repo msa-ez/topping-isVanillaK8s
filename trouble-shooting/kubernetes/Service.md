@@ -27,7 +27,7 @@ $ kubectl get {{object.kind}}
 
 NAME         TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)    AGE
 kubernetes   ClusterIP   10.100.0.1       <none>        443/TCP    4m58s
-order        ClusterIP   10.100.244.220   <none>        8080/TCP   2m24s
+{{object.metadata.name}}        ClusterIP   10.100.244.220   <none>        8080/TCP   2m24s
 
 ```
 - {{object.metadata.name}} {{object.kind}}가 확인이 되신다면 정상 생성이 된 것 입니다.  
