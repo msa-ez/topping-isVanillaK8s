@@ -1,7 +1,7 @@
 
 forEach: k8s.PersistentVolume
 fileName: {{object.metadata.name}}.md
-path: trouble-shooting/kubernetes/{{object.kind}}
+path: kubernetes/docs/{{object.kind}}
 ---
 
 #### Object: {{object.metadata.name}}
