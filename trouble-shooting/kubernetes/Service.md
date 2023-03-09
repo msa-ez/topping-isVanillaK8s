@@ -12,7 +12,7 @@ path: kubernetes/docs/{{object.kind}}
 ```
 $ kubectl create -f {{{yamlPath}}}
 ```
-- Yaml 파일에 명시된 스펙으로 {{object.metadata.name}} {{object.kind}}를 생성합니다.
+- Yaml 파일에 명시된 스펙으로 {{object.metadata.name}} {{object.kind}}를 생성합니다.  
 
 ```
 $ kubectl apply -f {{{yamlPath}}}
@@ -46,7 +46,7 @@ $ Kubectl describe {{object.kind}} {{object.metadata.name}}
 ```
 kubectl create deploy {{object.metadata.name}} --image=ghcr.io/docker_id/docker_image:latest
 ```
-- 대상 컨테이너를 생성합니다.
+- 대상 컨테이너를 생성합니다.  
 
 ```
 kubectl expose deploy order --type=ClusterIP --port={{portNumber object}} --target-port={{targetPortNumber object}}
@@ -70,14 +70,14 @@ spec:
 EOF
 ```
 - 새로운 터미널에서 클라이언트용 컨테이너를 생성하고 접속합니다.
-- 위의 스크립트를 terminal 에 복사하여 siege 라는 Pod 를 생성합니다. 
+- 위의 스크립트를 terminal 에 복사하여 siege 라는 Pod 를 생성합니다.  
 
 ```
 $ kubectl exec -it siege -- /bin/bash
 http http://10.x.x.x:{{portNumber object}}
 exit
 ```
-생성된 siege Pod 안쪽에서 {{object.metadata.name}} {{object.kind}}의 ClusterIP로 접근해봅니다.
+- 생성된 siege Pod 안쪽에서 {{object.metadata.name}} {{object.kind}}의 ClusterIP로 접근해봅니다.
 #
 
 ### Kubernetes Cluster network 외부에서 service에 access할 때, 해당 명령어로 외부 IP traffic을 허용할 수 있습니다.
