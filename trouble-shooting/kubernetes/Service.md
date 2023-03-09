@@ -17,7 +17,7 @@ $ kubectl create -f {{{yamlPath}}}
 ```
 $ kubectl apply -f {{{yamlPath}}}
 ```
-- Create가 된 상태라면 {{object.metadata.name}} {{object.kind}}의 수정이 이루어지고, Create가 된 상태가 아니라면 {{object.metadata.name}} {{object.kind}}를 Create 해주는 명령어입니다.  
+- Create가 된 상태라면 {{object.metadata.name}} {{object.kind}}의 수정이 이루어지고, Create가 된 상태가 아니라면 {{object.metadata.name}} {{object.kind}}를 Create 해주는 명령어입니다.
 #
 
 ### {{object.metadata.name}} {{object.kind}}가 정상적으로 생성되었는지 확인하시려면 아래의 명령어를 실행하세요.
@@ -30,7 +30,7 @@ kubernetes                      ClusterIP   10.100.0.1       <none>        443/T
 {{object.metadata.name}}        ClusterIP   10.100.244.220   <none>        8080/TCP   2m24s
 
 ```
-- {{object.metadata.name}} {{object.kind}}가 확인이 되신다면 정상 생성이 된 것 입니다.  
+- {{object.metadata.name}} {{object.kind}}가 확인이 되신다면 정상 생성이 된 것 입니다.
 #
 
 ### 생성된 {{object.metadata.name}} {{object.kind}}의 상세 실행 정보를 확인하시려면 아래의 명령어를 입력하세요.
@@ -38,7 +38,7 @@ kubernetes                      ClusterIP   10.100.0.1       <none>        443/T
 ```
 $ Kubectl describe {{object.kind}} {{object.metadata.name}}
 ```
-- {{object.metadata.name}} {{object.kind}}의 실행 정보 상태를 확인하여 문제가 있는지 확인합니다. 
+- {{object.metadata.name}} {{object.kind}}의 실행 정보 상태를 확인하여 문제가 있는지 확인합니다.
 #
 
 ### 생성된 {{object.metadata.name}} {{object.kind}}에 접속하여 서비스가 정상 동작하는지 테스트 해보세요.
@@ -77,7 +77,7 @@ $ kubectl exec -it siege -- /bin/bash
 http http://10.x.x.x:{{portNumber object}}
 exit
 ```
-- 생성된 siege Pod 안쪽에서 {{object.metadata.name}} {{object.kind}}의 ClusterIP로 접근해봅니다.
+생성된 siege Pod 안쪽에서 {{object.metadata.name}} {{object.kind}}의 ClusterIP로 접근해봅니다.
 #
 
 ### Kubernetes Cluster network 외부에서 service에 access할 때, 해당 명령어로 외부 IP traffic을 허용할 수 있습니다.
