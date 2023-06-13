@@ -291,6 +291,10 @@ spec:
     })
     
     Object.keys(copyValue).forEach(function (ele) {
+      if(value.length==sortedObj.length){
+        return false
+      }
+    
       if(copyValue[ele]._type=="Deployment"){
         sortedObj.push(copyValue[ele]);
       }
@@ -303,6 +307,10 @@ spec:
     })
     
     Object.keys(copyValue).forEach(function (ele) {
+      if(value.length==sortedObj.length){
+        return false
+      }
+    
       if(copyValue[ele]._type=="Service"){
         sortedObj.push(copyValue[ele]);
       }
