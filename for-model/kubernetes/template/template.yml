@@ -321,7 +321,7 @@ spec:
     })
     
     Object.keys(copyValue).forEach(function (ele) {
-      if(copyValue[ele]._type!="Namespace" || if(copyValue[ele]._type!="Deployment" || copyValue[ele]._type!="Pod" || copyValue[ele]._type!="Service" || copyValue[ele]._type!="StorageClass" || copyValue[ele]._type!="PersistentVolumeClaim"){
+      if(copyValue[ele]._type!="Namespace" || copyValue[ele]._type!="Deployment" || copyValue[ele]._type!="Pod" || copyValue[ele]._type!="Service" || copyValue[ele]._type!="StorageClass" || copyValue[ele]._type!="PersistentVolumeClaim"){
         sortedObj.push(copyValue[ele]);
       }
     })
