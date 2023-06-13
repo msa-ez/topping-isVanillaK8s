@@ -307,7 +307,7 @@ spec:
     })
     
     Object.keys(copyValue).forEach(function (ele) {
-      if(value.type==sortedObj.length){
+      if(typeof(value)==sortedObj.length){
         return false
       }
     
