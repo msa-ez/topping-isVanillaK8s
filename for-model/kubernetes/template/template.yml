@@ -291,7 +291,7 @@ spec:
     })
     
     Object.keys(copyValue).forEach(function (ele) {
-      if(value.size==sortedObj.length){
+      if(Object.keys(value).length==sortedObj.length){
         return false
       }
     
@@ -307,7 +307,7 @@ spec:
     })
     
     Object.keys(copyValue).forEach(function (ele) {
-      if(typeof(value)==sortedObj.length){
+      if(Object.keys(value).length==sortedObj.length){
         return false
       }
     
