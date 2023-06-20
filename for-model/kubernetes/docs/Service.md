@@ -1,4 +1,9 @@
 
+forEach: k8s.Service
+fileName: {{object.metadata.name}}.md
+path: kubernetes/docs/{{object.kind}}
+---
+
 #### Object: {{object.metadata.name}}
 #### Type: {{object.kind}}
 
