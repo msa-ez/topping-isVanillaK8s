@@ -1,5 +1,5 @@
 
-## Kubernetes Guide Line Documents
+## GuideLine Documents for Kubernetes Model
 
 ### Model Canvas에 그려진 Kubernetes Object에 대한 가이드라인을 안내합니다.
 
