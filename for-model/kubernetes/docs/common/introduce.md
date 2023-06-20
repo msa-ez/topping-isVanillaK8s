@@ -1,7 +1,4 @@
-forEach:
-fileName: introduce.md
-path: kubernetes/docs/common
----
+
 ## Kubernetes Guide Line Documents
 
 ### Model Canvas에 그려진 Kubernetes Object에 대한 가이드라인을 안내합니다.
