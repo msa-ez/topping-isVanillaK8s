@@ -4,4 +4,5 @@ imageUrl: https://github.com/msa-ez/template-axon2/assets/130956306/56ef2255-4ff
 templateName: isVanillaK8s
 description: Open-source container orchestration platform for managing and deploying containerized applications.
 depends:
-tags: Kubernetes
+tags:
+  - Kubernetes
