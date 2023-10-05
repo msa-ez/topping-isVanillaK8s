@@ -1,5 +1,3 @@
-except: true
----
 ### {{object.metadata.name}} {{object.kind}}가 정상적으로 생성되었는지 확인하시려면 아래의 명령어를 실행하세요.
 
 ```
