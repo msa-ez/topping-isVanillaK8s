@@ -2,7 +2,7 @@
 
 ## GuideLine Documents for Kubernetes Model
 
-### Model Canvas에 그려진 Kubernetes Object에 대한 가이드라인을 안내합니다.
+### Kubernetes Model Canvas에 그려진 Kubernetes Object에 대한 가이드를 안내합니다.
 
 
  * 좌측의 "Kubernetes" 하위의 "Docs" 폴더를 열어보면, Model에 그려진 Object Type 마다 생성된 폴더를 확인할 수 있습니다.
