@@ -58,3 +58,19 @@ Kubectl describe {{object.kind}} {{object.metadata.name}}
 >> 학인되지 않는다면 Ingress의 서비스 이름과 포트가 실제 서비스의 이름과 포트가 일치하는지 확인하세요.
 >>> 일치하지만 애플리케이션에 접근할 수 없다면 Ingress Controller의 문제이므로 관련 문서를 참고하세요.
 #
+
+<function>
+  window.$HandleBars.registerHelper('portNumber', function (object) {
+      var port = ''
+
+      if(object.kind=='Service'){
+          port = object.spec.ports[0].port
+      }else if(object.kind=='Deployment'){
+          port = object.spec.template.spec.containers[0].ports[0].containerPort
+      }else if(object.kind=='Pod'){
+          port = object.spec.containers[0].ports[0].containerPort
+      }
+
+      return port;
+  })
+</function>
