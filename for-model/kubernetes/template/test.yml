@@ -2,7 +2,7 @@ fileName: test.yml
 path: kubernetes/template
 ---
 {{#each k8sValue.elements}}
-  dsadadas
-  {{this.name}}
-  {{this._type}}
+  name: {{this.name}}
+  type: {{this._type}}
+  
 {{/each}}
