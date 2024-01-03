@@ -2,6 +2,7 @@ fileName: test.yml
 path: kubernetes/template
 ---
 {{#k8sValue.elements}}
+  dsadadas
   {{name}}
   {{_type}}
 {{/k8sValue.elements}}
