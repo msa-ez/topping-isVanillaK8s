@@ -2,7 +2,7 @@ forEach: k8s
 fileName: test.md
 path: kubernetes/template
 ---
-{{#k8sValue.elements}}
+{{#Service}}
   {{this.name}}
   {{this._type}}
-{{/k8sValue.elements}}
+{{/Service}}
