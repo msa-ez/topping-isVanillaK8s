@@ -1,0 +1,7 @@
+fileName: test.yml
+path: {{boundedContext.name}}/{{{options.packagePath}}}/infra
+---
+{{#k8sValue.elements}}
+  {{this.name}}
+  {{this._type}}
+{{/k8sValue.elements}}
