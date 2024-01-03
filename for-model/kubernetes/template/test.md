@@ -1,4 +1,4 @@
 {{#k8sValue.elements}}
-  {{value.object.kind}}
-  {{value.object.metadata.name}}
+  {{name}}
+  {{_type}}
 {{/k8sValue.elements}}
