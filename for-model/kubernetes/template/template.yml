@@ -1,3 +1,7 @@
+fileName: template.yml
+path: kubernetes/template
+---
+
 {{#each (sortedK8sValue k8sValue.elements) as |value index|}}
 {{#if (equals (objectType value index) "Namespace")}}
 ---
