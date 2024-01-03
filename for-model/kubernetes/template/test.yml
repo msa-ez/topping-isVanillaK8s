@@ -7,7 +7,7 @@ path: kubernetes/template
   {{_type}}
 {{/k8sValue.elements}}
 
-{{#each (k8sValue.elements)}}
+{{#each k8sValue.elements}}
   dsadadas
   {{name}}
   {{_type}}
