@@ -1,5 +1,6 @@
-fileName: test.yml
-path: {{boundedContext.name}}/{{{options.packagePath}}}/infra
+forEach: k8s
+fileName: test.md
+path: kubernetes/template
 ---
 {{#k8sValue.elements}}
   {{this.name}}
