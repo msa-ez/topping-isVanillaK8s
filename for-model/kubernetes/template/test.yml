@@ -1,4 +1,4 @@
-fileName: test.md
+fileName: test.yml
 path: kubernetes/template
 ---
 {{#k8s.ModelElements}}
