@@ -2,6 +2,6 @@ fileName: test.yml
 path: kubernetes/template
 ---
 {{#k8sValue.elements}}
-  {{this.object.metadata.name}}
-  {{this.object.kind}}
+  {{name}}
+  {{_type}}
 {{/k8sValue.elements}}
