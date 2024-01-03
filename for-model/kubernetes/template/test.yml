@@ -1,7 +1,7 @@
 fileName: test.yml
 path: kubernetes/template
 ---
-{{#k8s.ModelElements}}
+{{#k8sValue.elements}}
   {{object.metadata.name}}
   {{object.kind}}
-{{/k8s.ModelElements}}
+{{/k8sValue.elements}}
