@@ -7,7 +7,3 @@ path: kubernetes/template
   {{this._type}}
 {{/k8sValue.elements}}
 
-<function>
-
-  
-</function>
