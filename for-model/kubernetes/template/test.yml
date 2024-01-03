@@ -3,15 +3,9 @@ path: kubernetes/template
 ---
 {{#k8sValue.elements}}
   dsadadas
-  {{name}}
-  {{_type}}
+  {{this.name}}
+  {{this._type}}
 {{/k8sValue.elements}}
-
-{{#each k8sValue.elements}}
-  dsadadas
-  {{name}}
-  {{_type}}
-{{/each}}
 
 <function>
 
