@@ -3,6 +3,6 @@ fileName: test.md
 path: kubernetes/template
 ---
 {{#Service}}
-  {{this.name}}
-  {{this._type}}
+  {{object.metadata.name}}
+  {{object.kind}}
 {{/Service}}
