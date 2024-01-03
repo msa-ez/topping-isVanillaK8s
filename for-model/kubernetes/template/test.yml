@@ -6,4 +6,3 @@ path: kubernetes/template
   {{this.name}}
   {{this._type}}
 {{/k8sValue.elements}}
-
