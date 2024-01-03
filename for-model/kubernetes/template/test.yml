@@ -6,3 +6,23 @@ path: kubernetes/template
   {{name}}
   {{_type}}
 {{/k8sValue.elements}}
+
+{{#each (k8sValue.elements)}}
+  dsadadas
+  {{name}}
+  {{_type}}
+{{/each}}
+
+<function>
+
+  window.$HandleBars.registerHelper("objectType", function(value, index){
+    var objectType = value.object.kind;
+  
+    return objectType;
+  });
+  
+  window.$HandleBars.registerHelper('equals', function(a, b) {
+    return a === b;
+  });
+  
+</function>
