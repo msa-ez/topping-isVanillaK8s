@@ -1,8 +1,7 @@
-forEach: k8s
 fileName: test.md
 path: kubernetes/template
 ---
-{{#Service}}
+{{#k8s.ModelElements}}
   {{object.metadata.name}}
   {{object.kind}}
-{{/Service}}
+{{/k8s.ModelElements}}
