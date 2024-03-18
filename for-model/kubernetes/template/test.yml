@@ -2,8 +2,8 @@ fileName: test.yml
 path: kubernetes/template
 ---
 {{#each k8sValue.elements}}
-    {{#jsonToYAML this.object}}
-    {{/jsonToYAML}}
+    {{#parseToYaml this.object}}
+
 ---
 {{/each}}
 
