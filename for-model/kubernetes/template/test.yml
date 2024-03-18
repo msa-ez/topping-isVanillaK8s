@@ -2,9 +2,21 @@ fileName: test.yml
 path: kubernetes/template
 ---
 {{#each k8sValue.elements}}
-  {{#jsonToYAML}}
-  {{this.object}}
+  {{#jsonToYaml this.object}}
   {{/jsonToYAML}}
 
 ---
 {{/each}}
+
+
+<function>
+import json2yaml from 'json2yaml'
+
+window.$HandleBars.registerHelper('jsonToYaml', function (obejct) {
+  try {
+    return json2yaml.stringify(obejct);
+  } catch(e){
+    console.log(e)
+  }
+});
+</function>
