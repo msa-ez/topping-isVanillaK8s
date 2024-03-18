@@ -14,7 +14,8 @@ import json2yaml from 'json2yaml'
 
 window.$HandleBars.registerHelper('jsonToYaml', function (obejct) {
   try {
-    return json2yaml.stringify(obejct);
+    var yaml = json2yaml.stringify(obejct);
+    return yaml;
   } catch(e){
     console.log(e)
   }
