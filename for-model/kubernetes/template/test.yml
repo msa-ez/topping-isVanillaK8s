@@ -2,12 +2,9 @@ fileName: test.yml
 path: kubernetes/template
 ---
 {{#each k8sValue.elements}}
-{{#indent}}
 {{#jsonToYAML}}
 {{this.object}}
 {{/jsonToYAML}}
-{{/indent}}
-{{this.object}}
 ---
 
 {{/each}}
