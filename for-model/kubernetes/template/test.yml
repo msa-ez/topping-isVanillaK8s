@@ -3,7 +3,7 @@ path: kubernetes/template
 ---
 {{#each k8sValue.elements}}
   {{#jsonToYAML}}
-  {{this}}
+  {{this.object}}
   {{/jsonToYAML}}
 
 ---
