@@ -1,9 +1,0 @@
-fileName: test.yml
-path: kubernetes/template
----
-{{#each k8sValue.elements}}
-    {{parseToYaml this.object}}
-
----
-{{/each}}
-
