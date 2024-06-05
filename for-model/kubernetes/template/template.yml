@@ -199,22 +199,17 @@ apiVersion: "autoscaling/v2beta2"
 kind: "{{value.object.kind}}"
 metadata: 
   name: "{{value.object.metadata.name}}"
-  namespace: "{{value.object.metadata.namespace}}"
-  annotations: 
-    msaez.io/x: "910"
-    msaez.io/y: "550"
 spec: 
   scaleTargetRef: {}
-  minReplicas: 1
-  maxReplicas: 10
+  minReplicas: {{value.object.spec.minReplicas}}
+  maxReplicas: {{value.object.spec.maxReplicas}}
   metrics: 
     - 
       type: "Resource"
       resource: 
         name: "cpu"
-        target: 
-          type: "Utilization"
-          averageUtilization: 50
+        targetAverageUtilization: 50
+
 {{/if}}
 {{#if (equals (objectType value index) "StorageClass")}}
 ---
