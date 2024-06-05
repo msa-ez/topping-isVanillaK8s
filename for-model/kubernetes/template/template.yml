@@ -32,7 +32,7 @@ spec:
   selector: 
     matchLabels: 
       app: "{{value.object.metadata.name}}"
-  replicas: "{{value.object.spec.replicas}}"
+  replicas: {{value.object.spec.replicas}}
   template: 
     metadata: 
       labels: 
