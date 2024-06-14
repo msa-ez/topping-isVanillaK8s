@@ -17,3 +17,16 @@
 #### Batch Execution: In addition to services, Kubernetes can manage batch and continuous workloads, replacing failed containers when necessary.
 
 #### Container-centric Design: By grouping related containers into "pods", Kubernetes facilitates communication and resource sharing among them, ensuring efficient use of resources and ease of management.
+
+### How to run
+
+#### 1. Prepare the Docker or GHCR images for each microservice and update the image field for each service.
+
+#### 2. Deploy the template.yml
+```
+kubectl apply -f kubernetes/template/template.yml
+```
+#### 3. Verify the deployed deployments, services, and pods through the cluster
+```
+kubectl get all
+```
